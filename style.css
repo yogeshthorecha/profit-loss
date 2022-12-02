@@ -1,0 +1,40 @@
+.container{
+    text-align: center;
+    align-items: center;
+    width : 50vw;
+    padding : 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(121, 45, 192);
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 10%;
+    margin-left: 300px;
+}
+label{
+    padding-top: 0.5rem;
+    color:white;
+    font-weight: bold;
+}
+input{
+    margin:0.5rem;
+    padding: 0.2rem;
+   width : 40%;
+}
+button{
+    border-radius: 10%;
+    width:80px;
+    padding:0.4rem;
+    margin-top: 1rem;
+    background-color: black;
+    color:white;
+    
+}
+button:hover{
+    background-color: rgb(75, 236, 75);
+    color:black;
+    cursor: pointer;
+}
+#output-box{
+    padding-top:30px;
+    font-weight: bold;
+}
