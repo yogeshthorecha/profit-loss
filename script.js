@@ -7,7 +7,7 @@ const container = document.querySelector(".container");
 
 function calculateProfitAndLoss(initialPrice,quantity,currentPrice){
     
-  if(initialPrice >= 0 && quantity >= 0 && currentPrice >= 0){
+   if(initialPrice >= 0 && quantity >= 0 && currentPrice >= 0){
     if(initialPrice === "" || quantity === "" || currentPrice === ""){
         outputBox.innerText = "please!!!! fill out all the details";
         container.style.color = "red";
@@ -34,7 +34,8 @@ function calculateProfitAndLoss(initialPrice,quantity,currentPrice){
         container.style.backgroundColor = "rgb(121, 45, 192)";
       }
     }
-      else{
+  }
+  else{
     outputBox.innerText = "Please enter positive values";
 
   }
