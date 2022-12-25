@@ -16,14 +16,14 @@ function calculateProfitAndLoss(initialPrice,quantity,currentPrice){
     else{
       if(initialPrice > currentPrice){
         var loss = (initialPrice - currentPrice) * quantity;
-        var lossPercentage = (loss / initialPrice) * 100;
+        var lossPercentage = Number((loss / (initialPrice*quantity)) * 100).toFixed(2);
         outputBox.innerText = `your loss is ${loss}rs and your loss percentage is ${lossPercentage.toFixed(2)}%`;
         container.style.color = "red";
         container.style.backgroundColor = "blue"
       }
       else if(initialPrice < currentPrice){
           var profit = (currentPrice - initialPrice) * quantity;
-          var profitPercentage = (profit / initialPrice) * 100;
+          var profitPercentage = Number((profit / (initialPrice*quantity)) * 100).toFixed(2);
           outputBox.innerText = `your profit is ${profit}rs and your profit percentage is ${profitPercentage.toFixed(2)}%`;
           container.style.color = "rgb(75, 236, 75)";
           container.style.backgroundColor = "blue"
